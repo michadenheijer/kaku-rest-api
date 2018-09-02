@@ -1,5 +1,6 @@
 # KlikAanKlikUit REST-api
 [![CircleCI](https://circleci.com/gh/michadenheijer/kaku-rest-api.svg?style=svg&circle-token=e06c27eac7c9cff5ba9283b447023246fe4f204e)](https://circleci.com/gh/michadenheijer/kaku-rest-api)
+
 A REST-api for KlikAanKlikUit (CoCo) devices using NodeJS.
 
 ## Requirements
