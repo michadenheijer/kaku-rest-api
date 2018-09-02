@@ -9,7 +9,7 @@ for (deviceNumber in oldDevices.devices){
 }
 
 //Add all the devices to the status.json
-fs.readFile( __dirname + "/" + "devices.json", 'utf8', function readFileCallback(err, data) {
+fs.readFile( __dirname + "/" + "devices.example.json", 'utf8', function readFileCallback(err, data) {
       var devicesFile = JSON.parse( data );
       var devices = devicesFile.devices;
       for (i in devices) {
