@@ -1,14 +1,14 @@
 {
 	"devices": ["light", "switch", "christmas-tree"],
-	"hangstoel": {
+	"light": {
 		"address": 1592,
 		"device": 2
 	},
-	"MagicMirror": {
+	"switch": {
 		"address": 1593,
 		"device": 3
 	},
-	"bureaulampjes": {
+	"christmas-tree": {
 		"address": 1594,
 		"device": 4
 	}
