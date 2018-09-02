@@ -2,6 +2,8 @@ var fs = require("fs");
 const oldDevices = require('./devices.example.json');
 var status = {};
 var json;
+const KlikAanKlikUit = require('kaku-rpi');
+let kaku = KlikAanKlikUit();
 
 for (deviceNumber in oldDevices.devices){
     var currentDevice = oldDevices.devices[deviceNumber];
