@@ -1,5 +1,5 @@
 var fs = require("fs");
-const oldDevices = require('./devices.json');
+const oldDevices = require('./devices.example.json');
 var status = {};
 var json;
 
@@ -9,7 +9,7 @@ for (deviceNumber in oldDevices.devices){
 }
 
 //Add all the devices to the status.json
-fs.readFile( __dirname + "/" + "devices.example.json", 'utf8', function readFileCallback(err, data) {
+fs.readFile( __dirname + "/" + "devices.example.json", 'utf8', function (err, data) {
       var devicesFile = JSON.parse( data );
       var devices = devicesFile.devices;
       for (i in devices) {
@@ -17,5 +17,5 @@ fs.readFile( __dirname + "/" + "devices.example.json", 'utf8', function readFile
       }
       json = JSON.stringify(status);
       console.log(json);
-      fs.writeFile('status.json', json, 'utf8', callback);
+      fs.writeFile('status.json', json, 'utf8');
 });
