@@ -11,7 +11,7 @@ To use this API, you have to connected a generic 433-mhz transmitter to your Ras
 #### Using npm
 Downloading and installing using npm is the easiest installation method.
 ```
-npm i kaku-rest
+npm i kaku-rest -g
 ```
 You can skip the from source method.
 #### From source
