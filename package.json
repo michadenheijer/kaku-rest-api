@@ -1,6 +1,6 @@
 {
   "name": "kaku-rest",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A rest api for KaKu (CoCo) devices",
   "main": "index.js",
   "bin": {
@@ -15,8 +15,8 @@
     "REST"
   ],
   "repository": {
-  "type" : "git",
-  "url" : "https://github.com/michadenheijer/kaku-rest-api.git"
+    "type": "git",
+    "url": "https://github.com/michadenheijer/kaku-rest-api.git"
   },
   "author": "Micha den Heijer <micha@michadenheijer.com> (https://michadenheijer.com)",
   "license": "MIT",
