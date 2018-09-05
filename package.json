@@ -1,11 +1,14 @@
 {
   "name": "kaku-rest",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A rest api for KaKu (CoCo) devices",
   "main": "index.js",
+  "bin": {
+    "kaku-rest": "./bin/kaku-rest"
+  },
   "scripts": {
     "start": "node index.js",
-    "test": "node tester.js"
+    "test": "node lib/tester.js"
   },
   "keywords": [
     "KaKu",
@@ -16,6 +19,7 @@
   "dependencies": {
     "express": "^4.16.3",
     "file-system": "^2.2.2",
-    "kaku-rpi": "^2.1.0"
+    "kaku-rpi": "^2.1.0",
+    "user-home": "^2.0.0"
   }
 }
