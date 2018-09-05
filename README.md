@@ -1,4 +1,4 @@
-# KlikAanKlikUit REST-api
+# kaku-rest
 [![CircleCI](https://circleci.com/gh/michadenheijer/kaku-rest-api.svg?style=svg&circle-token=e06c27eac7c9cff5ba9283b447023246fe4f204e)](https://circleci.com/gh/michadenheijer/kaku-rest-api)
 
 A REST-api for KlikAanKlikUit (CoCo) devices using NodeJS.
@@ -7,12 +7,17 @@ A REST-api for KlikAanKlikUit (CoCo) devices using NodeJS.
 To use this API, you have to connected a generic 433-mhz transmitter to your Raspberry Pi (3). The data-port has to be connected to the physical pin 11.
 
 ## Installation
-### From source
-#### Step 1: Clone the project
+### Step 1: Download the project
+#### Using npm
+Downloading and installing using npm is the easiest installation method.
+```
+npm i kaku-rest
+```
+You can skip the from source method.
+#### From source
 ```
 git clone https://github.com/michadenheijer/kaku-rest-api.git
 ```
-#### Step 2: Install the project
 Go to the downloaded folder:
 ```
 cd kaku-rest-api
@@ -21,7 +26,7 @@ Install the project:
 ```
 sudo npm install -g
 ```
-#### Step 3: Locate the setup folder
+### Step 2: Locate the setup folder
 First run the program, it will stop afer a few seconds, but it will create the needed files and folders.
 ```
 kaku-rest
@@ -38,7 +43,7 @@ Add your own devices, using the nano command:
 ```
 nano devices.json
 ```
-#### Step 4: Add your devices
+### Step 3: Add your devices
 To add your devices change the ```devices.json``` file:
 ```
 nano devices.json
@@ -78,7 +83,7 @@ Change the names, device addresses and id's and save the file using:
 Ctrl^X
 ```
 It'll ask to save and press ```y```. Followed by an ```enter```.
-#### Step 5: Learn your devices to respond
+### Step 4: Learn your devices to respond
 At this moment your devices do NOT yet respond to your commands. But you can teach them to do so. First, run the server using:
 ```
 kaku-rest

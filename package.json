@@ -14,7 +14,11 @@
     "KaKu",
     "REST"
   ],
-  "author": "Micha den Heijer",
+  "repository": {
+  "type" : "git",
+  "url" : "https://github.com/michadenheijer/kaku-rest-api.git"
+  },
+  "author": "Micha den Heijer <micha@michadenheijer.com> (https://michadenheijer.com)",
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.3",
